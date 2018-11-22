@@ -1,0 +1,16 @@
+/*cria uma query para colocar esses comandos detalhe use isso somente em conjunto com o 1 banco de dados que esta na pasta banco de dados o arquivo dump deve ser carregado e estar funcionando antes de utilizar esses codigos */
+
+
+USE `cadastros`; 
+create table registro
+(login int(12) 
+auto_increment not null, 
+usuario varchar(50), 
+senha varchar(50), 
+nivel_acess varchar(50), 
+primary key(login)); 
+
+insert into registro 
+(usuario,senha,nivel_acess) 
+values 
+('admin','123','1');
